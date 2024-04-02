@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#slide-up").click(function(){
+                $("#para").slideUp(4000,"linear");
+            });
+
+            $("#slide-down").click(function(){
+                $("#para").slideDown(4000,"linear");
+            });
+
+            $("#toggle-slide").click(function(){
+                $("#para").toggle("fast",function(){
+                    alert("Toggle done");
+                });
+            });
+        });
+    </script>     
+</head>
+<body>
+    <a id="slide-up" href="#">Click here to Slide up</a>
+    
+    <a id="slide-down" href="#">Click here to Slide Down</a>
+
+    <a id="toggle-slide" href="#">Click here to Toggle</a>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Eligendi voluptatibus nemo expedita ad beatae nostrum et explicabo
+        dolorum aut iusto iure blanditiis velit cumque natus,
+        quod vitae neque, ut ratione.</p>
+</body>
+</html>

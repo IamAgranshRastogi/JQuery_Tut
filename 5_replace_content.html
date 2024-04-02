@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js\jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+        var newPara = $("<p>"); // For creating a paragraph
+        newPara.append("<i>This will replace any para in html</i>");
+        var newPara1 = $("p"); // For extracting any paragraph 
+        newPara1.append("<i>This para will get appended</i>");
+        
+        $("#box").html(newPara);
+        });
+    </script>
+</head>
+<body>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ex dolorem facilis est ducimus ipsum quasi magnam sit inventore
+        eius neque blanditiis, repudiandae eveniet maiores placeat 
+        quibusdam veritatis debitis enim quo.</p>
+    </div>
+</body>
+</html>

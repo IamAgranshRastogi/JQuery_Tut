@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+    
+    <script>
+       $("document").ready(function(){
+        // $("#box p:first").next().css("border","2px solid red");
+        $("#box p:last").prev().css("border","2px solid blue");
+        // $("#box").parents().css("border","2px solid green");
+        // $("#box p:first").parents().addClass('color').css("border","2px solid red");
+       });
+    </script>
+
+    <style>
+        /* .color{
+            color:red;
+        } */
+    </style>
+</head>
+<body>
+    <div id="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptates numquam quidem sint. Ea, minima! Odit dignissimos perspiciatis distinctio illum quam. Delectus voluptatum sit dolore suscipit, voluptas ab provident dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptates numquam quidem sint. Ea, minima! Odit dignissimos perspiciatis distinctio illum quam. Delectus voluptatum sit dolore suscipit, voluptas ab provident dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptates numquam quidem sint. Ea, minima! Odit dignissimos perspiciatis distinctio illum quam. Delectus voluptatum sit dolore suscipit, voluptas ab provident dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptates numquam quidem sint. Ea, minima! Odit dignissimos perspiciatis distinctio illum quam. Delectus voluptatum sit dolore suscipit, voluptas ab provident dolorem.</p>
+    </div>
+</body>
+</html>

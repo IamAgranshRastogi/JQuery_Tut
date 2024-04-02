@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+    
+    <script>
+        $("document").ready(function(){
+            $("#appendTo").click(function(){
+                $("#box p:first").appendTo("#box p:last");
+            });
+
+            $("#prependTo").click(function(){
+                $("p:last").prependTo("p:first");
+            });
+
+            $("#prependAfter").click(function(){
+                $("p").after("**");
+            });
+
+            $("#prependBefore").click(function(){
+                $("p").before("**");
+            });
+        });
+    </script>
+</head>
+<body>
+    <a href="#" id="appendTo">Append</a>
+    <a href="#" id="prependTo">Prepend</a>
+    <a href="#"id="prependBefore">PrependBefore</a>
+    <a href="#"id="prependAfter">PrependAfter</a>
+    
+    <div id="box">
+       <p>This is the 1</p>
+       <p>This is the 2</p>
+       <p>This is the 3</p>
+       <p>This is the 4</p>
+       <p>This is the 5</p>
+    </div>
+</body>
+</html>

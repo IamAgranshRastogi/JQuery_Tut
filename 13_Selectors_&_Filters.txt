@@ -1,0 +1,23 @@
+For Extracting Data we use : Selectors and Filters
+
+$(".selector")
+$(".selector p:first")
+
+
+1. Selectors
+
+$("p") - Selects all paragraphs
+$("#container") - Selects the id
+$(".container") - Selects the class
+
+
+2. Some Basic Filters
+
+:first
+:last
+:even
+:odd
+:focus
+
+
+

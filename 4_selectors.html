@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+        // These are selectors inside  : $(""). Through it we can modify HTML/CSS  
+        $("h1:first").css("border","2px solid red");
+        $("#h3").css("border","2px solid blue");
+        $("h1:last").css("border","2px dashed green");
+        
+        });
+    </script>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+    <h1 id="h3">Heading 3</h1>
+    <h1>Heading 4</h1>
+    <h1>Heading 5</h1>
+</body>
+</html>

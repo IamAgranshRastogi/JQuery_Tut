@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#toggleThis").click(function(){
+            $("#para").toggle(2000,"linear"); // linear or swing
+            });
+        });
+    </script>     
+</head>
+<body>
+    <a id="toggleThis" href="#">Click here to toggle</a>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Eligendi voluptatibus nemo expedita ad beatae nostrum et explicabo
+        dolorum aut iusto iure blanditiis velit cumque natus,
+        quod vitae neque, ut ratione.</p>
+</body>
+</html>

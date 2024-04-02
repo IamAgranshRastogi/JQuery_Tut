@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+            // $("p:contains('rerum')").css("border","1px solid green");
+            $("p:first-child").css("border","3px solid red");
+            // $("p:last-of-type").css("border","2px solid blue");
+            // $("div:has(p[class=third])").css("border","4px dashed yellow");
+            // $("p:nth-child(2)").css("font-size","20px");
+            // $("p:parent").css("background-color","grey");
+        });
+    </script> 
+
+    <style>
+        .para{
+            border: 1px solid black;
+        }
+    </style>
+    
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consequuntur. Cum id hic quia natus architecto ullam accusantium reprehenderit aperiam nulla ab, molestias itaque soluta quos debitis, et possimus iure.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum nisi possimus dolorum, consequatur obcaecati commodi consequuntur molestias sed quisquam dolorem totam deserunt, magnam similique tenetur est fugiat veritatis error.</p>
+    
+    
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus placeat culpa eos, excepturi amet fugiat autem veniam tempore assumenda enim error ad adipisci quibusdam numquam laborum. Explicabo, alias rerum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus placeat culpa eos, excepturi amet fugiat autem veniam tempore assumenda enim error ad adipisci quibusdam numquam laborum. Explicabo, alias rerum!</p>
+    <p class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus placeat culpa eos, excepturi amet fugiat autem veniam tempore assumenda enim error ad adipisci quibusdam numquam laborum. Explicabo, alias rerum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus placeat culpa eos, excepturi amet fugiat autem veniam tempore assumenda enim error ad adipisci quibusdam numquam laborum. Explicabo, alias rerum!</p>
+    </div>
+
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus placeat culpa eos, excepturi amet fugiat autem veniam tempore assumenda enim error ad adipisci quibusdam numquam laborum. Explicabo, alias rerum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus placeat culpa eos, excepturi amet fugiat autem veniam tempore assumenda enim error ad adipisci quibusdam numquam laborum. Explicabo, alias rerum!</p>
+    <p class="last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus placeat culpa eos, excepturi amet fugiat autem veniam tempore assumenda enim error ad adipisci quibusdam numquam laborum. Explicabo, alias rerum!</p>
+
+</body>
+</html>
